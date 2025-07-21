@@ -8,7 +8,9 @@ function login(event) {
   const validPass = "hoco2025";
 
   if (username === validUser && password === validPass) {
-    window.location.href = "dashboard.html";
+  localStorage.setItem("loggedIn", "true");
+  window.location.href = "dashboard.html";
+
   } else {
     document.getElementById("error-message").textContent = "Incorrect login!";
   }

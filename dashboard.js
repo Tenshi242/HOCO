@@ -1,3 +1,6 @@
+if (localStorage.getItem("loggedIn") !== "true") {
+  window.location.href = "index.html";
+}
 const form = document.getElementById("student-form");
 const tableBody = document.getElementById("student-table").getElementsByTagName("tbody")[0];
 const exportBtn = document.getElementById("export-btn");
@@ -155,3 +158,8 @@ searchIdInput.addEventListener("input", filterStudents);
 
 // Initial load
 loadStudents();
+
+function logout() {
+  localStorage.removeItem("loggedIn");
+  window.location.href = "index.html";
+}
