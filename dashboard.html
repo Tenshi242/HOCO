@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome to the HOCO Dashboard!</h1>
+    <form id="student-form">
+      <input type="text" id="student-name" placeholder="Student Name" required>
+      <input type="text" id="student-id" placeholder="Student ID" required>
+      <select id="student-grade" required>
+        <option value="">Select Grade</option>
+        <option value="Freshman">Freshman</option>
+        <option value="Sophomore">Sophomore</option>
+        <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+      </select>
+      <input type="text" id="student-guest" placeholder="Guest Info (Optional)">
+      <button type="submit">Add Student</button>
+    </form>
+
+    <div class="button-row">
+      <button id="export-btn">Export to CSV</button>
+    </div>
+
+        <h2>Student List</h2>
+
+    <div class="search-container">
+      <input type="text" id="search-name" placeholder="Search by Name">
+      <input type="text" id="search-id" placeholder="Search by Student ID">
+    </div>
+
+    <table id="student-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Grade</th>
+          <th>Guest Info</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+  <tbody>
+    <!-- Rows will be inserted here by JS -->
+  </tbody>
+</table>
+
+    <a href="index.html">Log Out</a>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
+``
