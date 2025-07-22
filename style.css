@@ -30,3 +30,18 @@ button {
   color: red;
   margin-top: 1rem;
 }
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .login-box {
+    width: 90%;
+    padding: 1rem;
+  }
+}

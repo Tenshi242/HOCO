@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Dashboard</title>
   <link rel="stylesheet" href="dashboard.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="dashboard-container">
@@ -32,22 +33,22 @@
       <input type="text" id="search-name" placeholder="Search by Name">
       <input type="text" id="search-id" placeholder="Search by Student ID">
     </div>
-
-    <table id="student-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>ID</th>
-          <th>Grade</th>
-          <th>Guest Info</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-  <tbody>
-    <!-- Rows will be inserted here by JS -->
-  </tbody>
-</table>
-
+    <div style="overflow-x: auto;">
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Grade</th>
+            <th>Guest Info</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- Rows will be inserted here by JS -->
+        </tbody>
+      </table>
+    </div>
     <a href="#" onclick="logout()">Log Out</a>
   </div>
 

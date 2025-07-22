@@ -69,3 +69,34 @@ table td input, table td select {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+@media (max-width: 768px) {
+  form input, form select {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  table th, table td {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+
+  .button-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dashboard-container {
+    padding: 10px;
+  }
+}
